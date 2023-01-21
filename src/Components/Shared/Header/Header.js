@@ -25,50 +25,60 @@ const Header = () => {
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal text-white"
+        className="p-1 font-extrabold text-lg text-white font-nunito"
       >
         <a href="#" className="flex items-center">
-          Pages
+          HOME
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal text-white"
+        className="p-1 font-normal text-lg text-white font-nunito"
       >
         <a href="#" className="flex items-center">
-          Account
+          TEXT 2 IMG
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal text-white"
+        className="p-1 font-normal text-lg text-white font-nunito"
       >
         <a href="#" className="flex items-center">
-          Blocks
+          IMG ENHANCER
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="p-1 font-normal text-white"
+        className="p-1 font-normal text-lg text-white font-nunito"
       >
         <a href="#" className="flex items-center">
-          Docs
+          DASHBOARD
         </a>
       </Typography>
-      <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-        <span>Buy Now</span>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className="p-1 font-normal text-lg text-white font-nunito"
+      >
+        <a href="#" className="flex items-center">
+          PROFILE
+        </a>
+      </Typography>
+      <Button className="hidden py-2 px-7 bg-[#6E3FF2] rounded-[6px] lg:inline-block">
+        <span>Logout</span>
       </Button>
     </ul>
   );
   return (
-    <div className="bg-[#212121] ">
-      <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-4 rounded-none shadow-none bg-opacity-0 border-none backdrop-blur-0 backdrop-filter-none ">
+    <div className="bg-[#212121] font-nunito ">
+      <Navbar className="mx-auto  py-2 px-4 lg:px-8 lg:py-4 rounded-none shadow-none bg-opacity-0 border-none backdrop-blur-0 backdrop-filter-none  ">
         <div className=" mx-auto flex items-center justify-between text-blue-gray-900">
           <Typography
             as="a"
@@ -76,7 +86,10 @@ const Header = () => {
             variant="small"
             className="mr-4 cursor-pointer py-1.5 font-normal text-white"
           >
-            <span>Material Tailwind</span>
+            <span className="logo">
+              <span className="letty">Letty</span>
+              <span>AI</span>
+            </span>
           </Typography>
           <div className="hidden lg:block">{navList}</div>
 

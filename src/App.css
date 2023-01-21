@@ -1,7 +1,65 @@
+.lettyai {
+  background: linear-gradient(180deg, #931cc6 100%, #f00088 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 500;
+}
 .img-people:hover {
   background: linear-gradient(
     180deg,
     rgba(189, 52, 254, 0.7) 0%,
     rgba(110, 63, 242, 0.7) 100%
   );
+  cursor: pointer;
+}
+
+.price-box:hover {
+  background: linear-gradient(
+    180deg,
+    rgba(110, 63, 242, 0.7) 0%,
+    rgba(189, 52, 254, 0.7) 100%
+  );
+  cursor: pointer;
+}
+
+.background {
+  position: absolute;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    180deg,
+    rgba(110, 63, 242, 0.5) 0%,
+    rgba(189, 52, 254, 0.5) 100%
+  );
+  filter: blur(150px);
+  z-index: -1;
+}
+
+.testimonial {
+  z-index: 0;
+}
+
+.letty {
+  background: linear-gradient(180deg, #6e3ff2 99.99%, #f00088 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.footer-logo,
+.logo {
+  font-weight: 700;
+  font-size: 64px;
+  font-family: "Nunito", sans-serif;
 }
